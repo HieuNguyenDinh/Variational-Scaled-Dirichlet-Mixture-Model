@@ -1,20 +1,6 @@
 import numpy as np
 from random import randint
 
-# generate random ranges to find the most stable range for initialization
-def v1_h1_gen():
-  arr = np.array([1, 0.1, 0.1])
-
-  for v1 in range(1, 1001):
-    for h1 in range(1, 1001):
-
-      test = np.array([randint(1, 1000) / 1000])
-      test = np.append(test, randint(1, 1000) / 1000)
-      test = np.append(test, randint(1, 1000) / 1000)
-
-      arr = np.vstack([arr, test])
-  return arr
-
 # return unique values in list
 def unique_in_list(a, D):
   res = []
